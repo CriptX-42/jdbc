@@ -19,6 +19,7 @@ public class UpdateData {
 
             myRs = myStmt.executeQuery("select * from employees");
 
+
             // 4. Process the result set
             while (myRs.next()) {
                 System.out.println(myRs.getString("last_name") + ", " + myRs.getString("first_name"));
